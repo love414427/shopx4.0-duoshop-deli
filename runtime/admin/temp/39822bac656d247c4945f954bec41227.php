@@ -1,0 +1,4 @@
+<?php /*a:1:{s:80:"/www/wwwroot/v4.shop.iun.cc/app/admin/view/default/payment/module/open_user.html";i:1699863362;}*/ ?>
+<?php if(!empty($module_data) and isset($module_data['is_install']) and $module_data['is_install'] == 1): ?>
+    <a href="javascript:;" class="am-icon-btn am-icon-check submit-state <?php if($module_data['is_open_user'] == 1): ?>am-success<?php else: ?>am-default<?php endif; ?>" data-url="<?php echo MyUrl('admin/payment/statusupdate'); ?>" data-id="<?php echo htmlentities($module_data['payment']); ?>" data-field="is_open_user" data-state="<?php echo htmlentities($module_data['is_open_user']); ?>"></a>
+<?php endif; ?>
